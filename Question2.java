@@ -12,13 +12,13 @@ public class Question2
      */
      
     Scanner in = new Scanner(System.in);
-    System.out.println("Enter Height in Meters: ");
+    //System.out.println("Enter Height in Meters: ");
     double height = in.nextDouble();
 
-    System.out.println("Enter Weight: ");
+    //System.out.println("Enter Weight: ");
     double weight = in.nextDouble();
     double BMI = weight / (height * height);
     DecimalFormat bmif = new DecimalFormat("###.#");
-    System.out.println("Your BMI is " + bmif.format(BMI));
+    System.out.println(bmif.format(BMI));
   }
 }
