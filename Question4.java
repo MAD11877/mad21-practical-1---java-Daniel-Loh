@@ -25,7 +25,7 @@ public class Question4
     {
       for (int x = 1; x <= i; ++x) 
       {
-        System.out.print("* ");
+        System.out.print("*");
       }
       System.out.println();
     }
