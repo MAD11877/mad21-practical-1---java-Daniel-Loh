@@ -18,6 +18,16 @@ public class Question4
      */
      
     Scanner in = new Scanner(System.in);
-    
+    System.out.println("Enter value: ");
+    int rows = in.nextInt();
+
+    for (int i = rows; i >= 1; --i) 
+    {
+      for (int x = 1; x <= i; ++x) 
+      {
+        System.out.print("* ");
+      }
+      System.out.println();
+    }
   }
 }
