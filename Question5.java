@@ -27,6 +27,34 @@ public class Question5
      */
      
     Scanner in = new Scanner(System.in);
+    int[] arr;
+
+    //System.out.println("Enter number: ");
+    int loop = in.nextInt();
+    arr = new int[loop];
+  
+    for (int x = 0; x < loop ; x++) 
+    {
+      arr[x] = in.nextInt();
+    }
+    
+    int mode = 0;
+    int maxCount = 0;
+    for (int i = 0; i < arr.length; i++) 
+    {
+      int value = arr[i];
+      int count = 1;
+      for (int j = 0; j < arr.length; j++) 
+      {
+        if (arr[j] == value) count++;
+        if (count > maxCount) 
+        {
+          mode = value;
+          maxCount = count;
+        }
+      }
+    }
+    System.out.println(mode);
     
   }
 }
